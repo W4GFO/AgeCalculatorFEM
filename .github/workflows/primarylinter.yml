@@ -1,17 +1,1 @@
-name: Primary-Linter
 
-on: push
-
-jobs:
-  primary-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
-    steps:
-      -  name: Checkout code
-         uses: actions/checkout@v2
-
-      - name: Run Primary-Linter
-        uses: github/primary-lint@v3
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
