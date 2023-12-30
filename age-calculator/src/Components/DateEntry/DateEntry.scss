@@ -1,0 +1,48 @@
+@import '../../globalStyles.scss';
+
+.data-entry-element-frame {
+	display: flex;
+	background-color: whitesmoke;
+
+	align-items: center;
+	justify-content: center;
+
+	.dataentry-elements-container {
+		width: 90%;
+		max-width: 90%;
+		background-color: orange;
+
+		p {
+			color: gray;
+			font-weight: 500;
+			font-size: 1.2em;
+			margin-bottom: 8px;
+		}
+
+		input {
+			height: 62px;
+			max-width: 100%;
+			overflow: hidden;
+			font-size: 1.2em;
+			border-radius: 4px;
+			padding-left: 8px;
+			border: 1px solid lightgray;
+		}
+	}
+}
+
+@media only screen and (max-width: $wide-mobile-width) {
+	.data-entry-element-frame {
+		.dataentry-elements-container {
+			//margin-top: 16px;
+
+			p {
+				font-size: 0.9em;
+			}
+
+			input {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
