@@ -8,9 +8,9 @@ type Props = {}
 export const BackgroundFrame = (props: Props) => {
 	return (
 		<section className='backgroundframe-main'>
-			<DateEntryFrame className='main-section'/>
-			<MidSection className='main-section' />
-			<AgeDisplayFrame className='main-section' />
+			<DateEntryFrame className='main-section main-section-top'/>
+			<MidSection className='main-section main-section-mid' />
+			<AgeDisplayFrame className='main-section main-section-btm' />
 		</section>
 	)
 }
